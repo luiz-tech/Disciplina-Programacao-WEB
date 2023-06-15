@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- 
+			*CABEÇALHO*
+
+				- Aluno: Luiz Cláudio Santos Cruz Filho
+				- Professor(a): Cibelle
+				- Turma: 301 Informárica
+				- Data: 12/10/2020 
+-->
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 3 - Programação WEB</title>
+
+	<!-- Estilos Personalizados para esta página-->
+	<style type="text/css">
+
+		h1,h2,h3{
+			margin-bottom: 0;
+		}
+
+		.form{
+			position: absolute;
+			width: 60%;
+		}
+
+		.form-group{
+			margin: 10px;
+			margin-left: 50px ;
+			padding: 5px;
+		}
+
+		.form-header{
+			font-family: arial;
+			opacity: 0.6;
+		}
+
+		.form-footer{
+			text-align: right;
+			position: relative;
+		}
+
+		.btn-submit{
+			background-color: #00ff00;
+			padding: 10px;
+			margin-right: 100px;
+			border-radius: 10px;
+			border-color: #0ac40a;
+			font-family: arial;
+		}
+
+	</style>
+</head>
+<body>
+
+<form class="form">
+
+	<div class="form-header">
+		<h1>Formulário para Inscrição em Evento</h1>
+		<small>Este é um exemplo de formulário de inscrição on-line para enventos</small>
+	</div>
+	
+	<!-- Data de Nascimento -->
+	<div class="form-group">
+		<label>Data de Nascimento:</label>
+		<input type="date" name="dtnascimento" required>
+	</div>
+
+	<!-- Nome Completo -->
+	<div class="form-group">
+		<label>Nome Completo:</label>
+		<input type="text" name="nome" placeholder="Digite seu nome..." required>
+	</div>
+
+	<!-- Sexo -->
+	<div class="form-group">
+		<label>Sexo:</label>
+		<input type="radio" name="sexo" value="M" checked="">
+		<label>Masculino</label>
+		<input type="radio" name="sexo" value="F">
+		<label>Feminino</label>
+	</div>
+
+	<!-- Data de Nascimento -->
+	<div class="form-group">
+		<label>Cargo:</label>
+		<input type="text" name="cargo" placeholder="Informe o cargo desejado..." required>
+	</div>
+
+	<!-- Data de Nascimento -->
+	<div class="form-group">
+		<label>Senha:</label>
+		<input type="password" name="senha" placeholder="Informe a senha..." required>
+	</div>
+
+	<!-- hr -->
+
+	<!-- Informações INstitucionais -->
+	<div class="form-header">
+		<h2>Informações da Instituição</h2>
+		<small>Preencha os campos abaixo com as informações da empresa em que trabalha</small>
+	</div>
+
+	<!-- Empresa -->
+	<div class="form-group">
+		<label>Empresa:</label>
+		<input type="text" name="empresa" placeholder="Informe a empresa que trabalha..." required>
+	</div>
+
+	<!-- Cidade -->
+	<div class="form-group">
+		<label>Cidade:</label>
+		<input type="text" name="cidade" placeholder="Informe sua cidade" required>
+	</div>
+
+	<!-- Estado -->
+	<div class="form-group">
+		<label>Estado:</label>
+		<select name="estado">
+		    <option value="">Selecione</option>
+		    <option value="AC">Acre</option>
+		    <option value="AL">Alagoas</option>
+		    <option value="AP">Amapá</option>
+		    <option value="AM">Amazonas</option>
+		    <option value="BA">Bahia</option>
+		    <option value="CE">Ceará</option>
+		    <option value="DF">Distrito Federal</option>
+		    <option value="ES">Espirito Santo</option>
+		    <option value="GO">Goiás</option>
+		    <option value="MA">Maranhão</option>
+		    <option value="MS">Mato Grosso do Sul</option>
+		    <option value="MT">Mato Grosso</option>
+		    <option value="MG">Minas Gerais</option>
+		    <option value="PA">Pará</option>
+		    <option value="PB">Paraíba</option>
+		    <option value="PR">Paraná</option>
+		    <option value="PE">Pernambuco</option>
+		    <option value="PI">Piauí</option>
+		    <option value="RJ">Rio de Janeiro</option>
+		    <option value="RN">Rio Grande do Norte</option>
+		    <option value="RS">Rio Grande do Sul</option>
+		    <option value="RO">Rondônia</option>
+		    <option value="RR">Roraima</option>
+		    <option value="SC">Santa Catarina</option>
+		    <option value="SP">São Paulo</option>
+		    <option value="SE">Sergipe</option>
+		    <option value="TO">Tocantins</option>
+		</select>
+	</div>
+
+	<!-- Recibo -->
+	<div class="form-group">
+		<label>Recibo:</label>
+		<input type="checkbox" name="recibo">
+		<small>Emitir em nome da instituição ?</small>		
+	</div>
+
+	<!-- Botão para Submição -->
+	<div class="form-footer">
+		<button class="btn-submit" type="submit">Fazer Inscrição</button>
+	</div>
+
+</form>
+</body>
+</html>

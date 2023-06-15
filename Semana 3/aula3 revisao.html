@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 
+			*CABEÇALHO*
+
+				- Aluno: Luiz Cláudio Santos Cruz Filho
+				- Professor(a): Cibelle
+				- Turma: 301 Informárica
+				- Data: 12/10/2020 
+-->
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 3 - Programação WEB</title>
+
+	<!-- Estilos Personalizados para esta página-->
+	<style type="text/css">
+
+		h2{
+			opacity: 0.6;
+		}
+
+		img{
+			width: 150px;
+			height: 150px;
+			border-radius: 25%;
+		}
+
+		.form-group {
+			margin: 10px;
+			padding: 5px;
+		}
+
+		.form-header{
+			font-family: arial;
+			text-align: center;
+		}
+
+		.form-footer{
+			text-align: right;
+			position: relative;
+		}
+
+		
+		.btn {
+			padding: 10px;
+			font-family: arial;
+			color: white;
+
+		}
+		.btn-submit{
+			background-color: #00ff00;
+			border-color: #0ac40a;
+		}
+
+		.btn-reset{
+			background-color: #ff0400;
+			border-color: #0ac40a;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="form-header">
+		<h1>Escola Virtual</h1>
+		<h2>Formulário Pré Matrícula</h2>
+		<img src="bloco-notas.png" alt="Caderno">
+	</div>
+
+<form action="" method="">
+<center>
+	<!-- Tabela -->
+	<table>
+		<thead>
+			<tr><td align="center" colspan="3"><b>Informações de Matricula:</b></td></tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>
+				<!-- Escolaridade -->
+				<div class="form-group">
+					<label>Série:</label><br>
+					<select name="estado">
+					    <option selected value="PE">Pré-escolar</option>
+					    <option value="EF1">E. Fundamental 1</option>
+					    <option value="EF2">E. Fundamental 1</option>
+					    <option value="EM">E. Médio</option>
+					    <option value="ES">E. Superior</option>
+					    <option value="PO">Pós-graudação</option>
+					</select>
+				</div>
+			</td>
+
+
+			<td>
+				<div class="form-group">
+					<label>Turno:</label>
+					<br>
+					<input type="radio" name="turno" value="M" checked>
+					<label>Manhã</label><br>
+					<input type="radio" name="turno" value="T">
+					<label>Tarde</label>
+				</div>
+			</td>
+
+
+			<td>
+				<div class="form-group">
+					<label>Turno:</label><br>
+					<input checked type="checkbox" name="atividades" value="I">
+					<label>Informática</label><br>
+					<input type="checkbox" name="atividades" value="M">
+					<label>Música</label><br>
+					<input type="checkbox" name="atividades" value="B">
+					<label>Balet</label>
+				</div>
+				
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<button class="btn btn-submit" type="submit">Enviar Formulário</button>
+	<button class="btn btn-reset" type="reset">Limpar Campos</button>
+</center>
+
+</form>
+</body>
+</html>

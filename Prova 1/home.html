@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!-- 
+			*CABEÇALHO*
+				-- AVALIAÇÃO DA 2ª FASE --
+
+				- Aluno: Luiz Cláudio Santos Cruz Filho
+				- Professor(a): Cibelle
+				- Turma: 301 Informárica
+				- Data: 30/11/2020 
+-->
+
+				<!------------
+
+					PÁGINA PRINCIPAL 
+
+				--------------->
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Prova 2ª Fase - Programação WEB</title>
+
+	<!-- Font-Awnsome-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		
+				img {
+			position: relative;
+			width: 190px;
+			height: 150px;
+			border-radius: 100%;
+			opacity: 0.6;
+			transition: opacity 1s;
+		}
+
+		img:hover {
+			opacity: 1;
+		}
+
+
+		p {
+			text-indent: 20px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.main {
+			width: auto;
+			height: auto;
+			background-color: #d1cef5;
+			overflow-x: hidden;
+		}
+
+		.header {
+			width: auto;
+			height: auto;
+			background-color: white;
+			text-align: left;
+			font-family: cursive;
+			margin-bottom: 20px;
+			padding: 5px;
+		}
+
+		.menu-left {
+			width: 20%;
+			height: auto;
+			position: relative;
+			float: left;
+			background-color: #a8dbff;
+			display: inline-block;
+			margin-right: 19px;
+			padding-top: 5px;
+			padding-bottom: : 5px;
+		}
+
+		.table {
+			position: relative;
+			text-align: center;
+			
+		}
+
+		.content {
+			width: 77%;
+			height: auto;
+			position: relative;
+			background-color: #ddffd9;
+			display: inline-block;
+			padding: 5px;
+			margin-bottom: 10px;
+
+		}
+
+		.content-header {
+			font-family: sans-serif;
+
+		}
+
+		.content-title {
+			font-family: cursive;
+			background-color: #bababa;
+			border-radius: 50%;
+			opacity: 0.8;
+			padding: 5px;
+			text-align: center
+		}
+
+		.footer {
+			display: block;
+			width: 100%;
+			height: auto;
+			float: left;
+			background-color: white;
+			margin-top: 20px;
+			padding: 5px;
+			text-align: justify;
+
+		}
+
+		.navbar{
+			position: relative;
+			float: right;
+			transition: 1s
+			background-color: #3d36c2;
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+			width: auto;
+			height: auto;
+			list-style: none;
+			text-decoration: none;
+			text-align: center;
+			background-color: #bababa;
+			padding: 10px;
+			margin: 5px;
+			transition: 1s;
+
+		}
+
+		li:hover {
+			background-color: black;
+			color: white;
+			text-decoration: underline;
+
+		}
+
+		label {
+			text-decoration: none;
+			opacity: 0.8;
+			font-weight: bold;
+			font-size: 17px;
+		}
+
+		textarea {
+			position: relative;
+			width: 90%
+
+		}
+		.form {
+			padding: 10px;
+		}
+
+		.form-control {
+			position:  relative;
+			border-color: #88e7f7;
+			border-width: 3px;
+			padding: 7px;
+			margin:  5px;
+			border-radius: 10%;
+			width: 200px;
+			text-align: justify;
+		    font-size: 17px;
+		    font-family: cursive;
+		}
+
+		.form-check {
+			position: relative;
+			display: block;
+			float: left;
+			width: 45%;
+			height: auto;
+			margin : 5px;
+			padding: 10px;
+			text-indent: 10px;
+		}
+
+		.form-check-title {
+			background-color: #bababa;
+			font-size: 20px;
+			display: block;
+			text-align: center;
+		}
+
+		.form-group-button {
+			position: relative;
+			float: left;
+			width: 95%;
+			height: auto;
+			background-color: #b3ffb3;
+
+			margin: 10px;
+			padding: 10px;
+
+			text-align: center;
+		}
+
+		.btn {
+			font-size: 17px;
+			font-family: cursive;
+			color: white;
+			text-align: center;
+			padding: 7px;
+			border-radius: 25%;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		.btn-trash {
+			background-color: #ff3636;
+		}
+
+		.btn-submit {
+			background-color: #36ff4a;
+		}
+
+
+		input[type=radio], input[type=checkbox] {
+			margin-bottom: 10px;
+		}
+
+		input#end {
+			width: 528px;
+		}
+
+		input#old {
+			width: 70px;
+		}
+
+		input#nome {
+			width: 400px;
+		}
+
+
+	</style>
+
+</head>
+<body class="main">
+
+	<div class="header">
+		Aluno: Luiz Cláudio Santos C. Filho<br>
+		Curso: Técninco emn Informática Integrado<br>
+		Turma: 301
+	</div>
+
+		<nav class="navbar">
+			<ol>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="home.html" target="_blank">Marcação de Consulta</a></li>
+				<li><a href="#" target="_blank">Atendimento Domiciliar</a></li>
+				<li><a href="#" target="_blank">Farmacia de Manipulação</a></li>
+			</ol>
+		</nav>
+
+		<!-- TABELA LATERAL DA PÁGINA -->
+		<div class="menu-left text-center">
+
+			<table align="center" class="table">
+				<tr><td><img src="imagens/logo.png"></td></tr>
+				<tr><td><img src="imagens/imagem1.png"></td></tr>
+				<tr><td><img src="imagens/imagem2.png"></td></tr>
+				<tr><td><img src="imagens/imagem3.png"></td></tr>
+			</table>
+
+		</div>
+
+		<!-- MEIO DA PÁGINA ONDE CONTERÁ AS INFORMAÇÕES -->
+		<div class="content">
+			<div class="content-header">
+				<h2 class="content-title">Vamos agendar sua consulta ?</h2>
+
+				<form class="form" action="" method="">
+
+					<h3 class="content-title" >Dados Pessoais</h3>
+					<label>Nome completo:</label>
+					<input id="nome" class="form-control" type="text" name="nome" placeholder="Informe seu nome completo" required>
+
+					<label>Idade:</label>
+					<input id="old" class="form-control" type="number" name="idade" placeholder="18"
+					required>
+
+					<label>Número do CPF ou RG:</label>
+					<input class="form-control" type="text" name="doc" placeholder="Informe o numero do documento (somente números)"
+					required>
+
+					<label>Contato</label>
+					<input class="form-control" type="text" name="doc" placeholder="+ddi(ddd)XXXXX-XXXX"
+					required><br>
+
+					<label>Endereço Completo:</label>
+					<input id="end" class="form-control" type="text" name="nome" placeholder="Informe seu endereço completo"
+					required>
+
+					<hr>
+
+					<h3 class="content-title" >Dados Clínicos</h3>
+			
+
+			<div class="form-check">
+					<label class="form-check-title">Triagem Básica:</label>
+					<br>
+					<label>Nenhum:</label>
+					<input type="checkbox" name="febre" value='' checked><br>
+					<label>Febre:</label>
+					<input type="checkbox" name="febre" value='febre'><br>
+					<label>Dor de Cabeça:</label>
+					<input type="checkbox" name="dorcabeca" value='dorcabeca'><br>
+					<label>Náusea ou Vômitos:</label>
+					<input type="checkbox" name="vomito" value='vomito'><br>
+					<label>Coriza:</label>
+					<input type="checkbox" name="coriza" value='coriza'><br>
+					<label>Vemelidão na pela:</label>
+					<input type="checkbox" name="vermlpele" value='vermlpele'><br>
+					<label>Dor Articular:</label>
+					<input type="checkbox" name="dorarticular" value='dorarticular'><br>
+					<label>Dor Sistêmica:</label>
+					<input type="checkbox" name="dorsistemica" value='dorsistemica'><br>
+					<label>Trauma:</label>
+					<input type="checkbox" name="trauma" value='trauma'><br>
+					<label>Fartura:</label>
+					<input type="checkbox" name="fratura" value='fratura'>
+			</div>
+
+				<div class="form-check">
+					<label class="form-check-title">O Paciente Encontra-se:</label>
+					<br>
+					<label>Coiciente, Acordado e Lúcido</label>
+					<input type="radio" name="estado" value="6" checked><br>
+
+					<label>Coiciente, Acordado e Desorientado</label>
+					<input type="radio" name="estado" value="5">
+
+					<label>Coiciente, Sonolente e Lúcido</label>
+					<input type="radio" name="estado" value="4"><br>
+
+					<label>Coiciente, Sonolento e Letárgico</label>
+					<input type="radio" name="estado" value="3">
+
+					<label>Inconciente, Respiração com Pulso</label>
+					<input type="radio" name="estado" value="2"><br>
+
+					<label>Inconciente, Respiração Fraca</label>
+					<input type="radio" name="estado" value="1">
+
+					<label>Inconicente, Não Respira e sem Pulso</label>
+					<input type="radio" name="estado" value="0"><br>
+				</div>
+
+				<div class="form-check">
+					<label class="form-check-title" >Especialidade Médica</label>
+					<br>
+					<select name="especialidade" class="form-control">
+						<option value="">[ Selecione ]</option>
+						<option value="CG">Clinico Geral</option>
+						<option value="PD">Pediatra</option>
+						<option value="NE">Neurologista</option>
+						<option value="CA">Cadiologista</option>
+						<option value="UR">Urologista</option>
+						<option value="GN">Ginecologista</option>
+						<option value="IF">Infectologista</option>
+						<option value="OM">Ortomolcular</option>
+						<option value="CRG" >Cirurgião Geral</option>
+					</select>
+			</div>
+
+					<div class="form-group-button">
+						<button class="btn btn-trash" type="reset">Descartar</button>
+						<button class="btn btn-submit" type="submit">Agendar</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+
+	<div class="footer">
+		<p><i>Prova da 2ª Fase - IFF - Informática Integrado ao Enino Médio<i><br>
+
+		<p>&copy; Luiz Cláudio @ V. 1.0</p>
+	</div>
+
+
+</body>
+</html>
+
+<!------------------------------------------------------------------------->
+				
+				<!------------
+
+					PÁGINA DO FORMULÁRIOS 
+
+				--------------->
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<!-- Font-Awnsome-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		
+				img {
+			position: relative;
+			width: 190px;
+			height: 150px;
+			border-radius: 100%;
+			opacity: 0.6;
+			transition: opacity 1s;
+		}
+
+		img:hover {
+			opacity: 1;
+		}
+
+
+		p {
+			text-indent: 20px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.main {
+			width: auto;
+			height: auto;
+			background-color: #d1cef5;
+			overflow-x: hidden;
+		}
+
+		.header {
+			width: auto;
+			height: auto;
+			background-color: white;
+			text-align: left;
+			font-family: cursive;
+			margin-bottom: 20px;
+			padding: 5px;
+		}
+
+		.menu-left {
+			width: 20%;
+			height: auto;
+			position: relative;
+			float: left;
+			background-color: #a8dbff;
+			display: inline-block;
+			margin-right: 19px;
+			padding-top: 5px;
+			padding-bottom: : 5px;
+		}
+
+		.table {
+			position: relative;
+			text-align: center;
+			
+		}
+
+		.content {
+			width: 77%;
+			height: auto;
+			position: relative;
+			background-color: #ddffd9;
+			display: inline-block;
+			padding: 5px;
+			margin-bottom: 10px;
+
+		}
+
+		.content-header {
+			font-family: sans-serif;
+
+		}
+
+		.content-title {
+			font-family: cursive;
+			background-color: #bababa;
+			border-radius: 50%;
+			opacity: 0.8;
+			padding: 5px;
+			text-align: center
+		}
+
+		.footer {
+			display: block;
+			width: 100%;
+			height: auto;
+			float: left;
+			background-color: white;
+			margin-top: 20px;
+			padding: 5px;
+			text-align: justify;
+
+		}
+
+		.navbar{
+			position: relative;
+			float: right;
+			transition: 1s
+			background-color: #3d36c2;
+		}
+
+		.navbar:hover {
+
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+			width: auto;
+			height: auto;
+			list-style: none;
+			text-decoration: none;
+			text-align: center;
+			background-color: #bababa;
+			padding: 10px;
+			margin: 5px;
+			transition: 1s;
+
+		}
+
+		li:hover {
+			background-color: black;
+			color: white;
+			text-decoration: underline;
+
+		}
+
+	</style>
+
+</head>
+<body class="main">
+
+	<div class="header">
+		Aluno: Luiz Cláudio Santos C. Filho<br>
+		Curso: Técninco emn Informática Integrado<br>
+		Turma: 301
+	</div>
+
+		<nav class="navbar">
+			<ol>
+				<li><a href="#" target="_blank">Saúde da Familia</a></li>
+				<li><a href="home.html" target="_blank">Marcação de Consulta</a></li>
+				<li><a href="#" target="_blank">Atendimento Domiciliar</a></li>
+				<li><a href="#" target="_blank">Farmacia de Manipulação</a></li>
+			</ol>
+		</nav>
+
+		<!-- TABELA LATERAL DA PÁGINA -->
+		<div class="menu-left text-center">
+
+			<table align="center" class="table">
+				<tr><td><img src="imagens/logo.png"></td></tr>
+				<tr><td><img src="imagens/imagem1.png"></td></tr>
+				<tr><td><img src="imagens/imagem2.png"></td></tr>
+				<tr><td><img src="imagens/imagem3.png"></td></tr>
+			</table>
+
+		</div>
+
+		<!-- MEIO DA PÁGINA ONDE CONTERÁ AS INFORMAÇÕES -->
+		<div class="content">
+			<div class="content-header">
+				<h2 class="content-title">Seja Bem Vindo a Clínica Médica</h2>
+
+				<p>Em tempos de pandemia onde um planeta inteiro sofre com essa mortal ameaça (COVID-19), fica nítida a urgente nescessidade de que a população se coincientize sobre os cuidados e medidas proteivas a nível pessoal e a nível - também coletivo.</p>
+
+				<p>Por esse motivo, foi criada a Clínica Médica, que tem como objetivo fazer você melhorar sua qualidade de vida, se curar e ajudar a curar os que a sua volta se encontram.</p>
+
+				<p>Aqui você encontrará uma equipe multidisciplinar especializada para te atender e que voc~e poderá consultar integralmente on-line ou em regime semi-presencial de consultas em domicílio.</p>
+
+				<p align="right">Somos guerreios da mesma batalha e seremos vitoriosos da mesma guerra !!!</p>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="content-header">
+				<h3 class="content-title">Venha se juntar a nossa causa !</h3>
+
+				<p>A nossa sede fica na Estr. da Pedra, 5040 - Loja B - Guaratiba, Rio de Janeiro - RJ, 23030-380. Para ver o endereço em mapa clique na imagem referente ao mapa do Google Maps</p>
+
+				<p>Caso queria marcar uma consulta clique na outra imagem para lhe direcionarmos para marcação de consultas.</p>
+
+				<p align="center">
+					<a class="btn-link-map" href="imagens/localizacao.png" target="_blank">
+						<img src="imagens/maps.png">
+						
+					</a>
+
+					<a href="home.html" target="_blank">
+						<img src="imagens/agenda.png">
+						
+					</a>
+				</p>
+
+			</div>
+		</div>
+
+
+
+
+	<div class="footer">
+		<p><i>Prova da 2ª Fase - IFF - Informática Integrado ao Enino Médio<i><br>
+
+		<p>&copy; Luiz Cláudio @ V. 1.0</p>
+	</div>
+
+
+</body>
+</html>

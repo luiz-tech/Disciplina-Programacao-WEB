@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<!-- 
+			*CABEÇALHO*
+
+				- Aluno: Luiz Cláudio Santos Cruz Filho
+				- Professor(a): Cibelle
+				- Turma: 301 Informárica
+				- Data: 26/10/2020 
+-->
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Aula 5 - Comandos Básicos - Programação WEB</title>
+
+	<!-- Estilos Personalizados para esta página-->
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<center><h2>Área do Triângulo</h2></center>
+
+	<?php
+
+		// -------- CÁUCULO DA ÁREA DO RETÂNGULO ------------------- //
+
+		$base =  10;
+		$altura = 20;
+
+		$area = ( $base*$altura ) / 2 ;
+
+		echo "Um triângulo com base ='".$base."' m e altura ='".$altura."' m
+		<br>";
+
+		echo "Possui área : ".$area." m<sup>2</sup>";
+
+	?>
+
+	<hr>
+
+	<center><h2>Mini Calculadora</h2></center>
+
+	<?php
+
+		// -------- CÁUCULO DAS OPERAÇÕES MATEMÁTICAS ------------------- //
+		$n1 =  10;
+		$n2 = 2;
+
+		// ADIÇÃO //
+		$soma = $n1 + $n2;
+
+		// SUBTRAÇÃO //
+		$diferenca = $n1 - $n2; 
+
+		// PRODUTO //
+		$produto = $n1 * $n2  ; 
+
+		// COCIENTE  //
+		$cociente = $n1 / $n2 ; 
+
+	?>
+
+	<h3>Resultados:</h3>
+	<ul>	
+		<li>A soma de <?php echo $n1.' e '.$n2. ' é igual a '.$soma ?></li>
+		<li>A diferença de <?php echo $n1.' e '.$n2. ' é igual a '.$diferenca ?></li>
+		<li>O produto entre <?php echo $n1.' e '.$n2. ' é igual a '.$produto ?></li>
+		<li>O cociente de <?php echo $n1.' e '.$n2. ' é igual a '.$cociente ?></li>
+	</ul>
+
+	<hr>
+
+
+	<center><h2>Nota Fiscal do Cliente</h2></center>
+
+	<?php
+
+		// -------- Nota Fiscal do Cliente ------------------- //
+
+		$precoUnit =  15.00;
+		$qtd = 9;
+
+		// TOTAL À PAGAR
+		$total = $precoUnit * $qtd  ; 
+
+		echo "Preço Unitário ".$precoUnit."<br> Quantidade ".$qtd. "<br> ";
+		echo "Total a pagar é R$".$total.',00';
+
+	?>
+
+	<hr>
+
+
+
+	<center><h2>Cálculo da Média  Anual do(a) Aluno(a)</h2></center>
+	<?php
+
+		// -------- CÁLCULO DA MÉDIA FINAL ------------------- //
+
+		// Inicializando as variáveis
+		$n1 = 8.0;
+
+		$n2 = 6.5;
+
+		$media = ($n1 + $n2) / 2;
+
+		if($media > 6.0) 
+			{	
+				$situacao = '<b style="color:green;">Aprovado</b>';
+			}
+			else {
+				$situacao = '<i style="color:red;">Reporvado</i>';
+			}
+	?>
+
+	<table border="1">
+		<thead>
+		<tr>
+			<th>Aluno</th>
+			<th>1º Bimestre</th>
+			<th>2º Bimestre</th>
+			<th>Média Final</th>
+			<th>Situação</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr align="center">
+			<td>Luiz Cláudio</td>
+			<td><?php echo $n1;?></td>
+			<td><?php echo $n2;?></td>
+			<td><?php echo $media;?></td>
+			<td><?php echo $situacao;?></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+	<center><h2>Positivo, Negativo ou Nulo ?</h2></center>
+	<hr>
+
+	<?php
+
+		// -------- VERIFICAÇÃO ------------------- //
+
+		// Inicializando acom valor aletório
+		$n = mt_rand(-10,10);
+
+		if($n == 0) 
+		{
+			echo "O ".$n." é um numero nulo"; 
+		} else if($n > 0){
+			echo "O ".$n." é um numero positivo"; 
+		} else {
+			echo "O ".$n." é um numero negativo"; 
+		}
+	?>
+	<hr>
+
+	<center><h2>Cálculo da Média  Anual do(a) Aluno(a) + Frequência</h2></center>
+	<?php
+		// -------- CÁLCULO DA MÉDIA FINAL + FREQUÊNCIA ------------------- //
+		// Inicializando as variáveis
+		$n1 = mt_rand(0.0,10.0);
+
+		$n2 = mt_rand(0.0,10.0);
+
+		$frequencia = mt_rand(0,100);
+		$media = ($n1 + $n2) / 2;
+
+		if($media > 6.0 and $frequencia > 75 ) 
+			{	
+				$situacao = '<b style="color:blue;">Aprovado</b>';
+			}
+			else {
+				$situacao = '<i style="color:red;">Reporvado</i>';
+			}
+
+	?>
+
+	<table border="1">
+		<thead>
+		<tr>
+			<th>Aluno</th>
+			<th>1º Bimestre</th>
+			<th>2º Bimestre</th>
+			<th>Média Final</th>
+			<th>Frequência Total</th>
+			<th>Situação</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr align="center">
+			<td>Luiz Cláudio</td>
+			<td><?php echo $n1;?></td>
+			<td><?php echo $n2;?></td>
+			<td><?php echo $media;?></td>
+			<td><?php echo $frequencia.'%';?></td>
+			<td><?php echo $situacao;?></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+
+	<center><h2>Numero igual ou diferente ?</h2></center>
+	<?php
+
+		// -------- VERIFICANDO IGUALDADE DOS NÚEMROS ------------------- //
+
+		// Inicializando as variáveis
+		$n1 = mt_rand(0,10);
+
+		$n2 = mt_rand(0,10);
+
+		echo "Os numeros ".$n1." e ".$n2." são ";
+		if($n1 == $n2) 
+			{	
+				echo 'iguais';
+			}
+			else {
+				echo 'distintos';
+			}
+	?>
+
+	<hr>
+
+	<center><h2>Em que faixa está o número ?</h2></center>
+
+	<?php
+		// -------- VERIFICANDO A FAIXA DOS NÚEMROS ------------------- //
+		// Inicializando as variáveis
+		$n = mt_rand(-100, 5000);
+
+		echo "O número ".$n." se encontra ";
+
+		if($n >= 0 and $n <= 100){
+			echo "entre0 e 100";
+
+		} else if($n >= 101 and $n <= 1000){
+			echo "entre 101 e 1000";
+
+		} else if($n >= 101 ) {
+			echo "entre os maiores os numeros maiores que 1000";
+		} else {
+			echo "em nenhuma das faixas existentes";
+		}
+	?>
+	
+	<hr>
+
+	
+
+</body>
+</html>
